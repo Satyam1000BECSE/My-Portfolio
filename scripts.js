@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const userRole = 'user'; // Change to 'owner' for owner privileges
+const userRole = 'owner'; // Change to 'owner' for owner privileges
 const currentUserId = generateUserId(); // Generates a unique ID for the current user
 
 document.addEventListener('DOMContentLoaded', loadRecommendations);
