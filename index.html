@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Responsive.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="lmuoii1.png" alt="Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Me section -->
+    <section id="about" class="box">
+        <h1 class="section-title">About Me</h1>
+        <div class="about-content">
+            <!--<img src="Satyam.png" alt="Your Photo" width="150px" height="150px">-->
+            <div class="about-image">
+                <img src="Satyam.png" alt="Your Photo" width="150px" height="180px">
+                <!--<h1>Hello!</h1>
+                <p>I'm Satyam Mourya, a passionate and motivated third-year Bachelor of Engineering student specializing in Computer Science and Engineering at Jiwaji University,Gwalior. With a strong foundation in engineering principles and a keen interest in Software Development, Web Development, Artificail Intelligence, etc. I am dedicated to expanding my knowledge and skills</p>
+                <p>Throughout my academic journey, I have gained proficiency in various programming languages, including HTML, CSS, JavaScript, Python, Java, C, C++, and C#. I have actively participated in projects and coursework that have helped me develop a solid understanding of both theoretical and practical aspects of engineering.</p>
+                <p>In addition to my technical skills, I am a quick learner, a team player, and highly enthusiastic about tackling new challenges. I am constantly seeking opportunities to apply my skills in real-world scenarios, whether through internships, collaborative projects, or personal initiatives.</p>
+                <p>My goal is to contribute to innovative and impactful projects that drive technological advancement and improve lives. Welcome to my portfolio, where you can explore my skills, projects, and the certificates I have earned during my academic journey.</p>-->
+            </div>
+            <div class="about-text">
+                <h1>Hello, I'm Satyam Mourya!</h1>
+                <p>I'm a passionate and motivated third-year Bachelor of Engineering student specializing
+                    in Computer Science and Engineering at Jiwaji University,Gwalior. With a strong foundation in
+                    engineering principles and a keen interest in Software Development, Web Development, Artificail
+                    Intelligence, etc. I am dedicated to expanding my knowledge and skills</p>
+                <p>Throughout my academic journey, I have gained proficiency in various programming languages, including
+                    HTML, CSS, JavaScript, Python, Java, C, C++, and C#. I have actively participated in projects and
+                    coursework that have helped me develop a solid understanding of both theoretical and practical
+                    aspects of engineering.</p>
+                <p>In addition to my technical skills, I am a quick learner, a team player, and highly enthusiastic
+                    about tackling new challenges. I am constantly seeking opportunities to apply my skills in
+                    real-world scenarios, whether through internships, collaborative projects, or personal initiatives.
+                </p>
+                <p>My goal is to contribute to innovative and impactful projects that drive technological advancement
+                    and improve lives. Welcome to my portfolio, where you can explore my skills, projects, and the
+                    certificates I have earned during my academic journey.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="box">
+        <h1 class="section-title">Skills</h1>
+        <ul class="skills-list">
+            <!-- Skills will be populated by JavaScript -->
+        </ul>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="box">
+        <h1 class="section-title">Projects</h1>
+        <p>Here are some of my projects. Click on the links to view them:</p>
+        <ul class="projects-list">
+            <li><a href="project1-link" target="_blank">Smart Home Automation</a></li>
+            <li><a href="project2-link" target="_blank">Metal detector</a></li>
+            <li><a href="project3-link" target="_blank">Music player website</a></li>
+        </ul>
+    </section>
+
+    <!-- Recommendations section -->
+
+    <section id="recommendations" class="box">
+        <div class="recommendations-section">
+            <h3>Recommendations</h3>
+            <ul>
+                <li>"Satyam Mourya is a highly skilled and reliable professional. Their expertise and dedication have greatly contributed to our projects' success." -</li>
+                <li>"I have had the pleasure of working with Satyam Mourya on several projects. They are innovative, hardworking, and a great team player." -</li>
+                <li>"Satyam Mourya's technical skills and problem-solving abilities are exceptional. They consistently deliver high-quality work." - </li>
+            </ul>
+            <ul id="recommendations-list">
+                <!-- Existing recommendations can be hardcoded here -->
+            </ul>
+
+
+            <h2>Leave a Recommendation</h2>
+            <input type="text" id="recommendation-input" placeholder="Enter your recommendation here">
+            <button onclick="submitRecommendation()">Submit</button>
+        </div>
+    </section>
+
+    <div class="popup-overlay" id="popup-overlay"></div>
+    <div class="popup" id="popup-box">
+        <p>Thanks for leaving a recommendation!</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+    <!--<section id="recommendations" class="box">
+        <div class="recommendations-section"></div>
+            <h3 class="section-title">Recommendations</h3>
+            <ul class="recommendations-list">
+                <li>"Satyam Mourya is a highly skilled and reliable professional. Their expertise and dedication have greatly contributed to our projects' success." -</li>
+                <li>"I have had the pleasure of working with Satyam Mourya on several projects. They are innovative, hardworking, and a great team player." -</li>
+                <li>"Satyam Mourya's technical skills and problem-solving abilities are exceptional. They consistently deliver high-quality work." - </li>
+            </ul>
+            <h2>Leave a Recommendation</h2>
+            <input type="text" id="recommendation-input" placeholder="Enter your recommendation here">
+            <button onclick="submitRecommendation()">Submit</button>
+         //<<div class="recommendations-section">
+            <h2>Leave a Recommendation</h2>
+            <input type="text" id="recommendation-input" placeholder="Enter your recommendation here">
+            <button onclick="submitRecommendation()">Submit</button>
+        
+            <h3>Recommendations</h3>
+            <ul id="recommendations-list"></ul>//
+        </div>
+        
+        <div class="popup-overlay" id="popup-overlay"></div>
+        <div class="popup" id="popup-box">
+            <p>Thanks for leaving a recommendation!</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </section>-->
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Contact Me</h3>
+                <ul>
+                    <li>Email: <a href="mailto:satammourya@gmail.com">satammourya@gmail.com</a></li>
+                    <!--<li>Phone: +1234567890</li>-->
+                    <li>Address: 40/1 New Ekta Nagar 452015, Indore(M.P.), India</li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h3>Connect With Me</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/satyam-mourya-861bb423a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank"><img src="linkedin.png" alt="LinkedIn"></a></li>
+                    <li><a href="https://x.com/SatyamM83399956?t=hX6vbXJfCiuWrybHRmvE3w&s=09" target="_blank"><img
+                                src="twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.facebook.com/satyam.mourya.1000?mibextid=ZbWKwL" target="_blank"><img
+                                src="facebook.png" alt="Facebook"></a></li>
+                    <li><a href="mailto:satammourya.com"><img src="email.png" alt="Email"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
